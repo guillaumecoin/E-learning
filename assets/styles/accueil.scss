@@ -1,0 +1,294 @@
+*{
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+#gras{
+  font-style: italic;
+  font-size: medium;
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin: 0px;
+  background-color : rgba(255, 255, 255, 0.75);
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+header li {
+  color: black;
+  font-size: 25px;
+  margin-left: 3px;
+  margin-right: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+#logo {
+
+  float: left;
+  margin-left: 0%;
+  height: 75px;
+
+
+}
+
+body {
+  color:black;
+  background-color: #5eb5e0;
+
+
+  margin:0;
+  background-position: top center;
+}
+
+.imgindex {
+  width: 50%;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 25%;
+  margin-right: 20%;
+}
+
+.box {
+  width: 60%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  border-radius: 21px;
+  text-align: justify;
+  background-color : rgba(255, 255, 255, 0.25);
+}
+
+#imagboxright{
+  object-fit: cover;
+  width: 200px;
+  float: right;
+  margin-right: -30px;
+}
+
+#imagboxleft{
+  object-fit: cover;
+  width: 200px;
+  float: left;
+  margin-top: 93px;
+}
+
+.firstbox {
+  width: 65%;
+  height: 400px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  background-color : rgba(255, 255, 255, 0.25);
+}
+
+.articlebox {
+  width: 90%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  background-color : rgba(255, 255, 255, 0.25);
+}
+
+.firstbox {
+  width: 65%;
+  height: 400px;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 30%;
+  background-color : rgba(255, 255, 255, 0.25);
+}
+
+.textbox{
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 150%;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%
+
+}
+
+
+
+.presentationBox {
+  width: 60%;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  background-color : rgba(255, 255, 255, 0.25);
+}
+
+
+
+.presentationBoxLeft {
+  width: 25%;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  object-fit: cover;
+}
+
+.presentationBoxLeft img{
+  width: 100%;
+}
+
+.presentationBoxRight {
+  width: 25%;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 65%;
+  object-fit: cover;
+}
+
+.presentationBoxRight img{
+  width: 100%;
+}
+
+.presentationBox p{
+  display: flex;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.presentationBox h1{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.presentationBoxLeft {
+  width: 25%;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  object-fit: cover;
+}
+
+.presentationBoxLeft img{
+  width: 100%;
+}
+
+.presentation{
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.one {
+  float: left;
+  width: 25%;
+  height: 30%;
+  margin-left: 2.5%;
+  background-color : rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 130px;
+}
+
+.two h1 {
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+  padding-top: 15px;
+}
+
+footer {
+  position: relative;
+  margin-bottom: -10px;
+  margin-top: 150px;
+  background-color : rgba(255, 255, 255, 0.5);
+  height: 280px;
+}
+
+.footerbox {
+  width: 45%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.footerbox ul {
+  list-style: none;
+}
+
+#col {
+  column-count: 1;
+
+}
+#col li {
+
+  font-size: x-small;
+}
+#imagbox{
+  object-fit: cover;
+  width: 350px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.boxarticle {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 30px;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color : rgba(255, 255, 255, 0.25);
+}
+
+.boxarticle h1{
+  margin-right: 100px;
+  text-align: center;
+  color: blueviolet;
+  font-size: 1.7em;
+}
+
+.boxarticle div{
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+  color: blue;
+  font-size: 1.7em;
+}
+
+.boxarticle a {
+  color: darkblue;
+  font-size: 1.2em;
+}

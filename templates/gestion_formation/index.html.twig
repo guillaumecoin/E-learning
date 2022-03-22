@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello GestionFormationController!{% endblock %}
+
+{% block body %}
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('formulaire') }}
+    {% endblock %}
+
+
+
+    {% if formations is not empty %}
+
+        <div class="container">
+        <div class="table">
+            <div class="table-header">
+                <div class="header__item"><a id="name" class="filter__link" >Titre</a></div>
+                <div class="header__item"><a id="wins" class="filter__link filter__link--number" >Description</a></div>
+                <div class="header__item"><a id="draws" class="filter__link filter__link--number" >Fichier</a></div>
+                <div class="header__item"><a id="losses" class="filter__link filter__link--number">Modidier</a></div>
+                <div class="header__item"><a id="total" class="filter__link filter__link--number">Supprimer</a></div>
+            </div>
+
+
+        {%  for formation in formations %}
+
+
+            <div class="table-content">
+                <div class="table-row">
+                    <div class="table-data">{{ formation.titre}}</div>
+                    <div class="table-data">{{ formation.description}}</div>
+                    <div class="table-data"><a href="{{ asset('uploads/pdf/' ~ formation.url) }}">Voir le pdf</a></div>
+                    <div class="table-data"><a href="{{ path('modifier', {formationId: formation.id}) }}">Modifier</a></div>
+                    <div class="table-data"><a href="{{ path('supprimer', {formationId: formation.id}) }}">Supprimer</a></div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        {% endfor %}
+
+        </div>
+
+        </div>
+
+    {% else %}
+
+        <li>  Aucune données disponible </li>
+
+    {% endif %}
+
+
+
+    <h1 style="text-align: center"> Ajouter une formation </h1>
+    <form id="form" class="topBefore">
+        {{ form_start(form) }}
+
+        {{ form_row(form.titre) }}
+        {{ form_row(form.description) }}
+        {{ form_row(form.url) }}
+
+
+        {{ form_end(form) }}
+
+    </form>
+
+
+
+
+
+
+
+
+{% endblock %}

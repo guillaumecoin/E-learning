@@ -1,0 +1,180 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccueilController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('accueil') }}
+    {% endblock %}
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning</title>
+
+    <meta name="viewport" content="width=device-width" />
+
+
+</head>
+<?php
+
+
+?>
+
+
+<body>
+
+<main>
+
+
+
+    <div class="box">
+        <div class="textbox">
+            <p>
+            <h1 id="gras">La réussite n'est rien d'autre que la volonté</h1>
+
+            </p>
+        </div>
+    </div>
+
+    <img class="imgindex" src="{{ asset("/image/accueil-1.png") }}"  alt="">
+
+    <div class="box">
+        <div class="textbox">
+
+            <p>
+            <h2>E-learning</h2>
+            <br>
+            <h5>Qu'est-ce que c'est ?</h5>
+            <br>
+            J’ai créé <span id="gras"> E-learning </span> afin d’aider les créateurs et créatrices d’entreprises à se lancer dans l’entreprenariat et à être là où on ne les attend pas.
+            <br>
+            <br>
+            <br>
+            Mes programmes pour les entrepreneurs s’axent essentiellement sur le développement des compétences en<span id="gras"> business model, comptabilité générale et finance.</span>
+            <br>
+            <br>
+
+
+
+            Je m’intéresse tout particulièrement au<span id="gras"> leadership féminin</span> et j’encourage les femmes à prendre place dans <span id="gras">le paysage entrepreneurial et financier.</span> J’accompagne également toutes celles et ceux qui souhaitent monter en compétence et acquérir des connaissances financières et managériales grâce à des formations simples et efficaces.
+            <br>
+            <br>
+
+            <br>
+            J’accompagne aussi les étudiants en cours particuliers pour les aider à valider leur diplôme ou à accéder à des parcours valorisants et en adéquation avec leurs ambitions.<span id="gras"> E-learning </span> est une plateforme bienveillante de partage d’expérience et de parcours. Grâce aux cours particuliers en groupe que je dispense via Zoom, des étudiants de divers horizons peuvent échanger et partager leurs expériences.
+
+
+
+        </div>
+    </div>
+
+
+
+</main>
+
+
+
+<div class="presentation">
+    <div class="presentationBoxLeft">
+        <img style="" alt="" src="{{ asset("/image/un.png") }}" class="">
+    </div>
+    <div class="presentationBox">
+
+        <div>
+            <h1> Mes Missions</h1>
+            <p>
+                Vous aidez à être là où on ne vous attend pas.  Je vous aide à acquérir les compétences nécessaires en finance et business model pour vous lancer dans l’entreprenariat et développer votre business. Je m’axe sur vos forces de caractères pour développer votre leadership. Grâce au programme que je propose vous pourrez vous lancer dans l’entreprenariat en toute confiance et sérénité.
+            </p>
+        </div>
+    </div>
+    <div class="presentation">
+        <div class="presentationBoxLeft">
+            <img style="" alt="" src="{{ asset("/image/deux.png") }}" class="">
+        </div>
+        <div class="presentationBox">
+
+            <div>
+
+                <p>
+                    J’accompagne tous ceux et toutes celles qui désirent monter en compétences et acquérir des connaissances en finance et comptabilité.
+                </p>
+            </div>
+        </div>
+        <div class="presentation">
+            <div class="presentationBoxLeft">
+                <img style="" alt="" src="{{ asset("/image/trois.png") }}" class="">
+            </div>
+            <div class="presentationBox">
+
+                <div>
+
+                    <p>
+                        J’aide les femmes à se lancer dans l’entreprenariat, à miser sur leurs forces (en les identifiant) et à développer leur leadership. Mes programmes de formations permettent de développer des compétences en gestion, management et entreprenariat.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="presentation">
+            <div class="presentationBoxLeft">
+                <img style="" alt="" src="{{ asset("/image/4.png") }}" class="">
+            </div>
+            <div class="presentationBox">
+
+                <div>
+
+                    <p>
+                        J’accompagne les étudiants à approfondir leur compétence en comptabilité et finance. Le but est d’apprendre par l’échec car je pense réellement qu’échouer est une véritable chance.
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="presentation">
+                <div class="footerbox">
+                    <div id="col">
+
+                        <ul><li><a href="footer.php">A propos de nous</a></li></ul>
+                        <ul><li><a href="pdf/Mentions-legales.pdf">Mentions légales</a></li></ul>
+                        <ul><li><a href="../admin/connexion.php">Connexion</a></li></ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </footer>
+</body>
+
+{% endblock %}
