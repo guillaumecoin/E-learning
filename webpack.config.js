@@ -63,6 +63,7 @@ Encore
     .addStyleEntry('formulaire', "./assets/styles/formulaire.scss")
     .addStyleEntry('formation', "./assets/styles/formation.scss")
     .addStyleEntry('login', "./assets/styles/login.scss")
+    .addStyleEntry('navbar', "./assets/styles/navbar.scss")
 
 
 

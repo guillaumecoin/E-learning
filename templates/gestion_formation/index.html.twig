@@ -37,13 +37,6 @@
 
             </div>
 
-
-
-
-
-
-
-
         {% endfor %}
 
         </div>
@@ -59,17 +52,21 @@
 
 
     <h1 style="text-align: center"> Ajouter une formation </h1>
-    <form id="form" class="topBefore">
+    <div id="form" class="topBefore">
+
+
         {{ form_start(form) }}
 
         {{ form_row(form.titre) }}
         {{ form_row(form.description) }}
         {{ form_row(form.url) }}
+        {{ form_row(form.save) }}
+
 
 
         {{ form_end(form) }}
 
-    </form>
+    </div>
 
 
 

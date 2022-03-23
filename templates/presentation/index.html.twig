@@ -12,13 +12,39 @@
     {% endblock %}
 
 
-    <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<body>
+<main>
+    <div class="presentation">
+        <div class="presentationBoxLeft">
+            <img style="" alt="" src="image/site/portrait.jpg" class="">
+        </div>
+        <div class="presentationBox">
+            <div>
+                <h1>Présentation</h1>
+                <p>
+                    Jessy Troudart, également appelé Assima, est docteure en science de gestion, spécialisée en finance. Elle est enseignante- chercheure depuis plus de 10 ans.
+                </p>
+                <p>
+                    Elle aime se faire appeler Assima qui est son deuxième prénom et qui signifie "celle qui sait et qui protège" en Swahili.
+                </p>
+                <p>
+                    Assima enseigne la comptabilité générale et la finance en licence et en Master dans différents établissements d'enseignement supérieur.
+                </p>
+                <p>
+                    Extrêmement pédagogue, elle dispense également des cours particuliers de comptabilité et de finance depuis plus de dix années à des étudiants en difficulté en Licence et Master.
+                </p>
+                <p>
+                    Assima est également chercheure et conférencière.  Ses recherches portent sur les stratégies bancaires internationales, l'entreprenariat féminin et l'écosystème entrepreneurial.
+                    Elle a d'ailleurs présenté récemment un article sur le thème de l'écosystème entrepreneurial au colloque de l'ACFAS à L'université de Sherbrooke et Université De Bishop, Québec, Canada.
+                    Colloque 413 : « Regards croisés sur l’innovation sociale en petite et moyenne entreprise ». Elle publie régulièrement des articles de recherche scientifique.
+                </p>
+                <p>
+                    Véritablement passionnée par l'entreprenariat, elle accompagne également les entrepreneurs dans la réalisation de leur business modèle notamment dans l'élaboration de la partie financière. Elle dispense des formations sur ces thèmes afin de rendre totalement autonomes les entrepreneurs, freelances, indépendants qui ont du mal à maîtriser certaines notions financières indispensables au développement de leur projet.
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/cguil/Documents/b2/projet BTS/E-learning/e-learning/src/Controller/PresentationController.php'|file_link(0) }}">src/Controller/PresentationController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/cguil/Documents/b2/projet BTS/E-learning/e-learning/templates/presentation/index.html.twig'|file_link(0) }}">templates/presentation/index.html.twig</a></code></li>
-    </ul>
-</div>
+    {%  include './includes/header.html.twig' %}
 {% endblock %}

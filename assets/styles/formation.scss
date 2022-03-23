@@ -48,8 +48,7 @@ a:hover {
 
 body {
   color:black;
-  background-color:white;
-
+  background-color:#e2dedb;
   margin:0;
   background-position: top center;
 }
@@ -119,6 +118,7 @@ body {
 .textbox{
   margin-left: 30px;
   margin-right: 30px;
+  line-height: 200%;
 }
 
 .presentationBox {
@@ -161,6 +161,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  line-height: 150%;
 }
 
 .one {
@@ -168,7 +169,7 @@ body {
   width: 25%;
   height: 30%;
   margin-left: 2.5%;
-  background-color : rgba(255, 255, 255, 0.5);
+text-align: center;
   margin-top: 0px;
   position: -webkit-sticky;
   position: sticky;
@@ -196,6 +197,9 @@ footer {
   margin-top: 10px;
   margin-bottom: 10px;
   justify-content: center;
+}
+.footerbox ul {
+  list-style: none;
 }
 
 #col {
@@ -237,4 +241,13 @@ footer {
 .boxarticle a {
   color: darkblue;
   font-size: 1.2em;
+}
+.boxsoutien {
+  width: 65%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 30%;
+
+  background-color : darkgrey;
 }

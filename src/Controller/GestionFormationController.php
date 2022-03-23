@@ -40,6 +40,7 @@ class GestionFormationController extends AbstractController
             /** @var UploadedFile $PdfFichier */
             $PdfFichier = $form->get('url')->getData();
 
+
             if ($PdfFichier){
                 $FichierDeBase = pathinfo($PdfFichier->getClientOriginalName(), PATHINFO_FILENAME);
                 $securisation = $slugger->slug($FichierDeBase);
