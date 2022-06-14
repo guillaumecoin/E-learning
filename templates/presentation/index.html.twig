@@ -11,18 +11,18 @@
         {{ encore_entry_link_tags('presentation') }}
     {% endblock %}
 
-
+    {%  include './includes/header.html.twig' %}
 <body>
 <main>
-    <div class="presentation">
+    <div class="presentation" style="margin-top: 20%">
         <div class="presentationBoxLeft">
-            <img style="" alt="" src="image/site/portrait.jpg" class="">
+            <img style="" alt="" src="{{ asset("/image/deux.png") }}" class="">
         </div>
         <div class="presentationBox">
             <div>
                 <h1>Présentation</h1>
                 <p>
-                    Jessy Troudart, également appelé Assima, est docteure en science de gestion, spécialisée en finance. Elle est enseignante- chercheure depuis plus de 10 ans.
+                    Alice Brunel, également appelé Assima, est docteure en science de gestion, spécialisée en finance. Elle est enseignante- chercheure depuis plus de 10 ans.
                 </p>
                 <p>
                     Elle aime se faire appeler Assima qui est son deuxième prénom et qui signifie "celle qui sait et qui protège" en Swahili.
@@ -42,9 +42,13 @@
                     Véritablement passionnée par l'entreprenariat, elle accompagne également les entrepreneurs dans la réalisation de leur business modèle notamment dans l'élaboration de la partie financière. Elle dispense des formations sur ces thèmes afin de rendre totalement autonomes les entrepreneurs, freelances, indépendants qui ont du mal à maîtriser certaines notions financières indispensables au développement de leur projet.
                 </p>
             </div>
+
+
         </div>
     </div>
 </main>
+</body>
 
-    {%  include './includes/header.html.twig' %}
+
+    {%  include './includes/footer.html.twig' %}
 {% endblock %}

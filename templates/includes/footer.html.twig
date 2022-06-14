@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello GestionFormationController!{% endblock %}
+
+{% block body %}
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('accueil') }}
+    {% endblock %}
+
+    <footer >
+        <div class="presentation"  >
+            <div class="footerbox">
+                <div id="col">
+
+
+                    <ul style="font-size: 500px"><li><a href="{{ path('app_contact') }}">Contact</a></li></ul>
+                    <ul><li><a href="{{ path('app_login') }}">Connexion</a></li></ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+{% endblock %}

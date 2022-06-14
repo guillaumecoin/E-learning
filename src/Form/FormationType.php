@@ -35,6 +35,7 @@ class FormationType extends AbstractType
                     ])
                 ],
             ])
+            ->add('duree')
             ->add('save', SubmitType::class , [
                 'label' => 'Ajouter',
             ])

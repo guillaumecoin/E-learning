@@ -7,7 +7,7 @@
     {% block stylesheets %}
         {{ encore_entry_link_tags('formation') }}
     {% endblock %}
-
+    {%  include './includes/header.html.twig' %}
 
     <div class="one">
         <div class="two">
@@ -27,6 +27,10 @@
             <h1>{{ formation.titre}}</h1>
             <br>
             <h5>{{ formation.description}}</h5>
+            <br>
+            <br>
+
+            <h5>Temps de formation (en heures) : {{ formation.duree}}</h5>
             <br>
             <a href="{{ asset('uploads/pdf/' ~ formation.url) }}">Voir le pdf</a>
 
@@ -49,5 +53,7 @@
 
 
 
-    {%  include './includes/header.html.twig' %}
+
+    {%  include './includes/footer.html.twig' %}
+
 {% endblock %}

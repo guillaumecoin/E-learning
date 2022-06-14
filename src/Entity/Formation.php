@@ -32,6 +32,11 @@ class Formation
      */
     private $url;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $duree;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -69,6 +74,18 @@ class Formation
     public function setUrl(string $url): self
     {
         $this->url = $url;
+
+        return $this;
+    }
+
+    public function getDuree(): ?int
+    {
+        return $this->duree;
+    }
+
+    public function setDuree(int $duree): self
+    {
+        $this->duree = $duree;
 
         return $this;
     }

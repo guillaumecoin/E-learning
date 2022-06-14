@@ -27,8 +27,11 @@ class GestionFormationController extends AbstractController
      */
 
 
-    public function index(Request $request, SluggerInterface $slugger): Response
+    public function index(Request $request, SluggerInterface $slugger,ManagerRegistry $doctrine): Response
     {
+
+
+
 
         $formation = new Formation();
         $form = $this->createForm(FormationType::class,  $formation);
@@ -65,6 +68,7 @@ class GestionFormationController extends AbstractController
             $entityManager->flush();
 
             return $this->redirectToRoute('app_gestion_formation');
+
         }
         return $this->render('gestion_formation/index.html.twig', [
             'controller_name' => 'GestionFormationController',

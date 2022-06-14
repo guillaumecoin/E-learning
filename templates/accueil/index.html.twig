@@ -34,12 +34,13 @@
 
 
 <body>
+{%  include './includes/header.html.twig' %}
 
 <main>
 
 
 
-    <div class="box">
+    <div class="box" >
         <div class="textbox">
             <p>
             <h1 id="gras">La réussite n'est rien d'autre que la volonté</h1>
@@ -144,39 +145,9 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <footer>
-            <div class="presentation">
-                <div class="footerbox">
-                    <div id="col">
-
-                        <ul><li><a href="footer.php">A propos de nous</a></li></ul>
-                        <ul><li><a href="pdf/Mentions-legales.pdf">Mentions légales</a></li></ul>
-                        <ul><li><a href="../admin/connexion.php">Connexion</a></li></ul>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </footer>
+    </div>
+</div>
 </body>
 
-{%  include './includes/header.html.twig' %}
-
+{%  include './includes/footer.html.twig' %}
 {% endblock %}
